@@ -34,14 +34,10 @@ thing = false;
 thing();
 thing.toUpperCase();
 const movies = ["Arrival", "The Thing", "Aliens", "Amadeus"];
-let foundMovie;
+let foundMovie: string;
 
 for (let movie of movies) {
     if (movie === "Amadues") {
         foundMovie = "Amadeus";
     }
 }
-
-foundMovie();
-foundMovie = 1;
-foundMovie.unknownMethod();
