@@ -11,3 +11,13 @@ function greet(person) {
     return "Hi there, ".concat(person, "!");
 }
 greet();
+// different return types
+function rando(num) {
+    if (Math.random() < 0.5) {
+        return num.toString();
+    }
+    return num;
+}
+var add = function (x, y) {
+    return x + y;
+};
