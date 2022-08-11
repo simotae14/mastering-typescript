@@ -8,3 +8,7 @@ var coordinate = { x: 34, y: 2 };
 function randomCoordinate() {
     return { x: Math.random(), y: Math.random() };
 }
+// Excess properties
+printName({ first: "Mick", last: "Jagger", age: 473 });
+var singer = { first: "Mick", last: "Jagger", age: 473, isAlive: true };
+printName(singer);
