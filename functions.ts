@@ -26,3 +26,8 @@ function rando(num: number) {
 const add = (x: number, y: number): number => {
     return x + y;
 }
+
+const colors = ["red", "orange", "yellow"];
+colors.map(color => {
+    return color.toUpperCase();
+})
