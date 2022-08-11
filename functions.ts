@@ -31,3 +31,9 @@ const colors = ["red", "orange", "yellow"];
 colors.map(color => {
     return color.toUpperCase();
 })
+
+// void return
+function printTwice(msg: string): void {
+    console.log(msg);
+    console.log(msg);
+}
