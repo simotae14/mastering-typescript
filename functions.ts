@@ -37,3 +37,14 @@ function printTwice(msg: string): void {
     console.log(msg);
     console.log(msg);
 }
+
+// never return
+function makeError(msg: string): never {
+    throw new Error(msg);
+}
+
+function gameLoop(): never {
+    while (true) {
+        console.log("GAME LOOP RUNNING!");
+    }
+}
