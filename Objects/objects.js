@@ -35,3 +35,9 @@ var myPoint = {
     x: 1,
     y: 3
 };
+var user = {
+    id: 12837,
+    username: 'catgurl'
+};
+console.log(user.id);
+user.id;

@@ -86,3 +86,17 @@ const myPoint: Point = {
     x: 1,
     y: 3
 };
+
+// readonly property
+type User = {
+    readonly id: number;
+    username: string;
+};
+
+const user: User = {
+    id: 12837,
+    username: 'catgurl'
+};
+
+console.log(user.id);
+user.id ; 
