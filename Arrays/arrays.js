@@ -15,3 +15,6 @@ cords.push({
 // cords.push({
 //     y: 8
 // });
+// MULTIDIMENSIONAL ARRAYS
+var board = [["X", "O", "X"], ["X", "O", "X"], ["X", "O", "X"]];
+var demo = [[[1]]];

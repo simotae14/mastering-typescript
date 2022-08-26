@@ -25,3 +25,8 @@ cords.push({
 // cords.push({
 //     y: 8
 // });
+
+// MULTIDIMENSIONAL ARRAYS
+const board: string[][] = [["X", "O", "X"],["X", "O", "X"],["X", "O", "X"]];
+
+const demo: number[][][] = [[[1]]];
