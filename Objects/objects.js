@@ -9,7 +9,7 @@ printName({ first: "Thomas", last: "Jenkins" });
 //     return { x: Math.random(), y: Math.random() };
 // }
 // Excess properties
-printName({ first: "Mick", last: "Jagger", age: 473 });
+// printName({ first: "Mick", last: "Jagger", age: 473 });
 var singer = { first: "Mick", last: "Jagger", age: 473, isAlive: true };
 printName(singer);
 var age = 24234;
@@ -41,3 +41,12 @@ var user = {
 };
 console.log(user.id);
 user.id;
+var happyFace = {
+    radius: 4,
+    color: 'yellow'
+};
+var christy = {
+    numLives: 7,
+    breed: 'Husky',
+    age: 9
+};

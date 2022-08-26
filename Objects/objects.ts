@@ -13,7 +13,7 @@ printName({ first: "Thomas", last: "Jenkins" });
 // }
 
 // Excess properties
-printName({ first: "Mick", last: "Jagger", age: 473 });
+// printName({ first: "Mick", last: "Jagger", age: 473 });
 
 const singer = { first: "Mick", last: "Jagger", age: 473, isAlive: true };
 printName(singer);
@@ -100,3 +100,37 @@ const user: User = {
 
 console.log(user.id);
 user.id ; 
+
+// Intersection Types
+type Circle = {
+    radius: number;
+};
+
+type Colorful = {
+    color: string;
+};
+
+type ColorfulCircle = Circle & Colorful;
+
+const happyFace: ColorfulCircle = {
+    radius: 4,
+    color: 'yellow'
+};
+
+type Cat = {
+    numLives: number
+};
+
+type Dog = {
+    breed: string
+};
+
+type CatDog = Cat & Dog & {
+    age: number;
+};
+
+const christy: CatDog = {
+    numLives: 7,
+    breed: 'Husky',
+    age: 9
+};
