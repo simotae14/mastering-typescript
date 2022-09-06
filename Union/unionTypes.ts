@@ -22,3 +22,19 @@ coordinates = {
     lat: 321.23,
     long: 23.45
 };
+
+function printAge(age: number | string): void {
+    console.log(`You are ${age} years old`);
+}
+
+function calculateTax(price: number | string, tax: number) {
+    
+    if (typeof price === 'string') {
+        price = price.replace('$', '');
+        price = parseFloat(price);
+    } 
+    return price * tax;
+}
+
+console.log(calculateTax(45, .07));
+console.log(calculateTax("$45", .07));
