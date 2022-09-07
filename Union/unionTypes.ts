@@ -51,3 +51,16 @@ coords.push({
     x: 213,
     y: 123
 });
+
+// LITERAL TYPES
+let zero: 0 = 0;
+zero = 2;
+
+// combine the literal types with Union Type
+let mood: "Happy" | "Sad" = "Happy";
+mood = "Sad";
+
+// define a type of literals
+type DayOfWeek = "Monday" | "Tuesday" | "Wednesday" | "Thursday" | "Friday" | "Saturday" | "Sunday";
+let currentDay: DayOfWeek = "Monday";
+

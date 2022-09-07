@@ -33,3 +33,10 @@ coords.push({
     x: 213,
     y: 123
 });
+// LITERAL TYPES
+var zero = 0;
+zero = 2;
+// combine the literal types with Union Type
+var mood = "Happy";
+mood = "Sad";
+var currentDay = "Monday";
