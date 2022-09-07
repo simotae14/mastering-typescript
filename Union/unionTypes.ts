@@ -38,3 +38,16 @@ function calculateTax(price: number | string, tax: number) {
 
 console.log(calculateTax(45, .07));
 console.log(calculateTax("$45", .07));
+
+// Union Type in Arrays
+const stuff: (number | string)[] = [1,2,3,"das"];
+
+const coords: (Point | Loc)[] = []
+coords.push({
+    lat: 321.213,
+    long: 23.334
+});
+coords.push({
+    x: 213,
+    y: 123
+});

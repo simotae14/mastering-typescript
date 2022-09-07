@@ -22,3 +22,14 @@ function calculateTax(price, tax) {
 }
 console.log(calculateTax(45, .07));
 console.log(calculateTax("$45", .07));
+// Union Type in Arrays
+var stuff = [1, 2, 3, "das"];
+var coords = [];
+coords.push({
+    lat: 321.213,
+    long: 23.334
+});
+coords.push({
+    x: 213,
+    y: 123
+});
