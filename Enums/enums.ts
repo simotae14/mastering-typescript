@@ -1,8 +1,8 @@
 enum OrderStatus {
-   PENDING,
-   SHIPPED,
-   DELIVERED,
-   RETURNED 
+   PENDING = 10,
+   SHIPPED = 34,
+   DELIVERED = 324,
+   RETURNED = 98,
 }
 
 const myStatus = OrderStatus.DELIVERED;
