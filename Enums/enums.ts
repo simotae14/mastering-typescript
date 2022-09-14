@@ -1,8 +1,8 @@
 enum OrderStatus {
-   PENDING = 10,
-   SHIPPED = 34,
-   DELIVERED = 324,
-   RETURNED = 98,
+   PENDING,
+   SHIPPED,
+   DELIVERED,
+   RETURNED 
 }
 
 const myStatus = OrderStatus.DELIVERED;
@@ -12,3 +12,13 @@ function isDelivered(status: OrderStatus) {
 }
 
 isDelivered(OrderStatus.RETURNED);
+
+enum ArrowKeys {
+    UP = 'up',
+    DOWN = 'down',
+    LEFT = 'left',
+    RIGHT = 'right',
+    ERROR = 34
+}
+
+ArrowKeys.LEFT
