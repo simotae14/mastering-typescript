@@ -45,3 +45,23 @@ const shoes: Product = {
 }
 
 console.log(shoes.applyDiscount(0.4));
+
+// Reopening Interfaces
+interface Dog {
+    name: string;
+    age: number;
+}
+
+interface Dog {
+    breed: string;
+    bark(): string;
+}
+
+const elton: Dog = {
+    name: "Elton",
+    age: 0.5,
+    breed: "Autralian Shepherd",
+    bark() {
+        return "WOOF WOOF!";
+    }
+}

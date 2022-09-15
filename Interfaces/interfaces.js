@@ -19,3 +19,11 @@ var shoes = {
     }
 };
 console.log(shoes.applyDiscount(0.4));
+var elton = {
+    name: "Elton",
+    age: 0.5,
+    breed: "Autralian Shepherd",
+    bark: function () {
+        return "WOOF WOOF!";
+    }
+};
