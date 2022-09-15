@@ -10,12 +10,4 @@ function isDelivered(status) {
     return status === OrderStatus.DELIVERED;
 }
 isDelivered(OrderStatus.RETURNED);
-var ArrowKeys;
-(function (ArrowKeys) {
-    ArrowKeys["UP"] = "up";
-    ArrowKeys["DOWN"] = "down";
-    ArrowKeys["LEFT"] = "left";
-    ArrowKeys["RIGHT"] = "right";
-    ArrowKeys[ArrowKeys["ERROR"] = 34] = "ERROR";
-})(ArrowKeys || (ArrowKeys = {}));
-ArrowKeys.LEFT;
+"left" /* ArrowKeys.LEFT */;
