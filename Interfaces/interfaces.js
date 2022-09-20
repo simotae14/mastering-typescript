@@ -27,3 +27,12 @@ var elton = {
         return "WOOF WOOF!";
     }
 };
+var chewy = {
+    name: 'Chewy',
+    age: 4.5,
+    breed: 'Lab',
+    bark: function () {
+        return 'Bark!';
+    },
+    job: 'guide dog'
+};
