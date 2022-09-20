@@ -36,3 +36,10 @@ var chewy = {
     },
     job: 'guide dog'
 };
+var pierre = {
+    name: 'Pierre',
+    id: 123897,
+    email: 'pierre@gmail.com',
+    level: 'senior',
+    languages: ['JS', 'Python']
+};
