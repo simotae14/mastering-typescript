@@ -1,5 +1,6 @@
 var norma = {
     breed: 'Silkie',
     eggsPerWeek: 4,
-    name: 'Norma '
+    name: 'Norma ',
+    age: 2
 };
