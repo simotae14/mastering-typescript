@@ -1,12 +1,10 @@
 const btn = document.getElementById("btn")! as HTMLButtonElement;
 const input = document.getElementById("todoinput")! as HTMLInputElement;
+const form = document.querySelector("form")!;
 
-btn.addEventListener("click", function() {
-  alert(input.value);
-  input.value = "";
-})
+function handleSubmit(e: SubmitEvent) {
+  e.preventDefault();
+  console.log("SUBMITTED!");
+}
 
-// Type Assertion alternative syntax
-const input2 = document.getElementById("todoinput")!;
-
-(<HTMLInputElement>input).value
+form.addEventListener("submit", handleSubmit);
