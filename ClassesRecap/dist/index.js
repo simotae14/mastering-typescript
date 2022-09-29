@@ -1,10 +1,14 @@
 class Player {
+  static description = "Player in our game!";
   #score = 0;
   #numLives = 10;
   constructor(first, last) {
     this.first = first;
     this.last = last;
     this.#secret();
+  }
+  static randomPlayer() {
+    return new Player("Andy", "Samberg");
   }
   get fullName() {
     return `${this.first} ${this.last}`;
@@ -63,3 +67,5 @@ const player1 = new Player("blue", "steele ");
 console.log(player1.fullName);
 player1.fullName = "Amy Adams";
 console.log(player1.fullName);
+Player.description
+Player.randomPlayer();
