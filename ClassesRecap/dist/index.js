@@ -6,6 +6,12 @@ class Player {
     this.last = last;
     this.#secret();
   }
+  get fullName() {
+    return `${this.first} ${this.last}`;
+  }
+  get score() {
+    return this.#score;
+  }
   getScore() {
     return this.#score;
   }
@@ -29,13 +35,13 @@ const player1 = new Player("blue", "steele ");
 // console.log(player1.last);
 // console.log(player1);
 // console.log(player1.#numLives);
-player1.loseLife();
+// player1.loseLife();
 // console.log(player1.numLives);
 // player1.#score = -124293;
-console.log(player1.getScore());
-console.log(player1.setScore(28));
-console.log(player1.getScore());
-console.log(player1);
+// console.log(player1.getScore());
+// console.log(player1.setScore(28));
+// console.log(player1.getScore());
+console.log(player1.score);
 
 // const player2 = new Player("charlie", "brown");
 // player2.taunt();
