@@ -1,0 +1,2 @@
+var nums = [];
+var colors = [];
