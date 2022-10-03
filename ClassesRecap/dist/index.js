@@ -7,3 +7,4 @@ class Player {
     }
 }
 const elton = new Player("Elton", "Steele");
+elton.first = 'elton';
