@@ -24,7 +24,7 @@ class Player {
   constructor(
     public first: string,
     public last: string,
-    private __score: number
+    protected __score: number
   ) {}
 
   private secretMethod(): void {
@@ -45,6 +45,13 @@ class Player {
       throw new Error('Score cannot be negative:');
     }
     this.__score = newScore;
+  }
+}
+
+class SuperPlayer extends Player {
+  public isAdmin: boolean = true;
+  maxScore() {
+    this.__score = 9999;
   }
 }
 
