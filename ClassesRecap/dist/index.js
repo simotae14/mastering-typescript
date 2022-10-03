@@ -44,7 +44,7 @@ class Player {
   }
 }
 
-const player1 = new Player("blue", "steele ");
+// const player1 = new Player("blue", "steele ");
 // player1.taunt();
 // console.log(player1.first);
 // console.log(player1.last);
@@ -64,8 +64,14 @@ const player1 = new Player("blue", "steele ");
 // player2.taunt();
 // player1.#secret();
 
-console.log(player1.fullName);
-player1.fullName = "Amy Adams";
-console.log(player1.fullName);
-Player.description
-Player.randomPlayer();
+// console.log(player1.fullName);
+// player1.fullName = "Amy Adams";
+// console.log(player1.fullName);
+// Player.description
+// Player.randomPlayer();
+
+class AdminPlayer extends Player {
+  isAdmin = true;
+}
+
+const admin = new AdminPlayer();
